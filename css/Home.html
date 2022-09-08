@@ -1,0 +1,240 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href = "Home.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<link rel="icon" href="ux_images/Logo.jpeg" type="image/icon type">
+
+<body>
+
+
+
+    <div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" data-theme="b" id="menu"> <!-- /menu panel left-->
+        <ul data-role="listview">
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="Home.html">Home</a></li>
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="#calendar">My Account</a></li>
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="#calendar">Scan QR Code</a></li>
+
+
+  
+        <div  style="background: #D9CFCE;color:black; margin-top: 50px;" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                <h4>Attraction Category</h4>
+                <ul data-role="listview">
+             <li><a style="background: #D9CFCE;color:black;" href="HistoricalPlace.html">Historical Places</a></li>
+                <li><a style="background: #D9CFCE;color:black;" href="Activities.html">Activities</a></li>
+                <li><a style="background: #D9CFCE;color:black;" href="Tours.html">Tours</a></li>
+        </ul>
+            </div>
+
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="#calendar">Favorites</a></li>
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="#calendar">Login/Sign up</a></li>
+        <li><a style="background: #D9CFCE;color:black; margin-top: 50px;" href="#calendar">About Us</a></li>
+        </ul>
+    </div><!-- /panel left-->
+    
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="a" id="filter"> <!-- /filter panel right-->
+        <p> Here you put content you would like to display in this panel</p>
+        <a href="#" data-rel="close">Close filter panel</a>
+    </div><!-- /panel right-->
+
+<div  data-role="header"  data-position="fixed"style ="background: #96ACBA;" >
+
+   
+
+   
+    <div id ="logo">
+
+        <a href = "Home.html">
+     <img  src  ="ux_images/Logo-iphone.jpg" style ="height:auto;width:25%; margin-top:2px; margin-left:35%;"/> 
+    </a>
+</div>
+
+    <a href="#menu" data-icon="bars" data-iconpos="notext" style="margin-top: 12px;margin-left: 10px; background: #96ACBA;" >Menu</a>
+        
+   		                            
+</div>
+
+<table>
+    <tr>
+      <td class='special_offers'>
+
+  <div class="w3-content w3-section" style="max-width:100%; max-height: 100%;">
+  
+    <img class="mySlides" src="ux_images/PtvLondonEye.jpg" style="width:100%;height:100%;">
+    <img class="mySlides" src="ux_images/britishMuseam.jpg" style="width:100%;height:100%;">
+    <img class="mySlides" src="ux_images/PtvLondonEye2.jpg" style="width:100%;height:100%;">
+    <img class="mySlides" src="ux_images/BritishMuseum2.jpg" style="width:100%;height:100%;">
+   
+
+
+    <a href="LondonEye.html" style="width:30%;float:left;margin-top:-20%; font-size:12px;" class="ui-btn ui-icon-carat-r ui-btn-icon-right">London Museum</a>
+    <a href="#" style="width:30%;float:right;margin-top:-20%; font-size:12px;" class="ui-btn ui-icon-carat-r ui-btn-icon-right">London Eye</a>
+    
+  </div>
+  
+  
+  <script>
+     var slideIndex = 0;
+         carousel();
+         
+         function carousel() {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+           slideIndex++;
+           if (slideIndex > x.length) {slideIndex = 1}
+           x[slideIndex-1].style.display = "block";
+           setTimeout(carousel, 2000); // Change image every 2 seconds
+     } 
+ 
+ </script>
+   
+</table>
+
+<div class="mainhotBox">
+    <p>Popular Places to Visit</p>
+   <div class="hotBox">
+   <div class="imgbox">
+  <img src ="ux_images/BritishMuseum.jpg"/>
+   </div>
+   <div class="bigbox">
+       ehiuwhfdkjshfkjhdslghfuojhfjlfhgflsjdhgkjvcxhv kj kjfshvnkj cx,mnvioldsc kjadf,xchncv kjdfcv bndfkjlxcnnkucj 
+    </div>
+   <div class= "smallbox">
+       dhsgfdkj aasd a...
+    </div>
+   <div class="smallbox">
+
+    125
+    </div>
+   <div class="smallbox">
+
+    dandsja
+    </div>
+     </div>
+   
+    <div class="hotBox">
+   <div class="imgbox">
+  <!-- <img src ="BritishMuseum.jpg"/>-->
+   </div>
+   <div class="bigbox">
+    </div>
+   <div class= "smallbox">
+    </div>
+   <div class="smallbox">
+    </div>
+   <div class="smallbox">
+    </div>
+     </div>
+  
+  <div class="hotBox">
+   <div class="imgbox">
+  <!-- <img src ="BritishMuseum.jpg"/>-->
+   </div>
+   <div class="bigbox">
+    </div>
+   <div class= "smallbox">
+    </div>
+   <div class="smallbox">
+    </div>
+   <div class="smallbox">
+    </div>
+   </div>
+  </div>	
+
+  
+ <div class="mainhotBox">
+ 
+    <p>Attractions Category</p>
+    <div class="hotBox">
+        <a href="HistoricalPlace.html">
+            <img   src="ux_images/buckingham Palace.jpg" style="width:100%;height:100%; border-radius:10px; margin-top: -6px;"></a>
+
+            <a href="HistoricalPlace.html" style=
+            "width: 90%;
+            border-radius: 8px;
+            border: hidden;
+             float: left;
+             margin-top: -11%;
+             font-size: 18px;
+             color: white;
+             height: 10px;
+             background: rgba(72, 74, 74, 0.5);
+             text-shadow: none;" class="ui-btn">Historical Place</a>
+
+        </div>    
+    
+   
+
+        <div class="hotBox">
+            <a href="Activities.html">
+                <img   src="ux_images/Activities.png" style="width:100%;height:100%;border-radius:10px; margin-top: -6px;"></a>
+
+                <a href="LondonEye.html" style=
+                "width: 90%;
+                border-radius: 8px;
+                border: hidden;
+                 float: left;
+                 margin-top: -11%;
+                 font-size: 18px;
+                 color: white;
+                 height: 10px;
+                 background: rgba(72, 74, 74, 0.5);
+                 text-shadow: none;" class="ui-btn">Activities</a>
+    
+            </div>    
+        
+   
+
+            <div class="hotBox">
+                <a href="Tours.html">
+                    <img   src="ux_images/busTour.png" style="width:100%;height:100%;border-radius:10px; margin-top: -6px;"></a>
+
+                    <a href="Tours.html" style=
+                    "width: 90%;
+            border-radius: 8px;
+            border: hidden;
+             float: left;
+             margin-top: -11%;
+             font-size: 18px;
+             color: white;
+             height: 10px;
+             background: rgba(72, 74, 74, 0.5);
+             text-shadow: none;" class="ui-btn">Tours</a>
+        
+                </div>    
+    
+    </div>
+   
+  <div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+    <div class="footbar">
+    <a href="#Page2" class="ui-btn">Contact Us</a>
+    <a style ="float:right; margin-right:10%" href="#Page2" class="ui-btn">About Us</a>
+    </div>
+    
+    <div class="footbar">
+      <ul>
+          <img src ="ux_images/Facebook.jpg" style= "width:10%; height:12%; float:left;margin-left:-10%" a href="#Page2" >
+          <img src ="ux_images/Insta.png" style= "width:7%; height:9%;margin-left:20%;" a href="#Page2" >
+          <img src ="ux_images/Snap.png" style= "width:9%; height:11%; margin-left:25%;" a href="#Page2" >
+          <img src ="ux_images/twitter.png" style= "width:11%; height:18%; float:right; margin-right:10%;" a href="#Page2" >
+      </ul>
+      
+      </div>
+  </footer>
+  </div>
+  </div>
+
+		
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src ="JavaScripts.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+ 
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+		<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+		<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+
+
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+	
+
+			<div id="custom-border-radius" class ="header">
+				<h1> 		Historical</h1>
+				    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" id="Backbtn"data-rel = "back" data-transition="slidefade">No text</a>
+							
+			</div>
+ 			
+
+	
+		
+	<!--1-->
+	<div class ="Content">
+	
+	<div class="Img">
+		<img src ="ux_images/britishMuseam.jpg">
+	
+	</div>
+
+   
+	<div class="context">
+		<h5>British Museum</h5>
+		<p> 
+		The British Museum is a public institution commited to human history, art and culture situated in the Bloomsbury area of London, England. Read more...
+		</p>
+
+		<div class= "hourPriceBox">
+
+			<h5>Suggested duration</h5>
+			<p>	2-3 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+				<p>Visit British Museum From £0 </p>
+		</div>
+	</div>
+	
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+
+		</div>
+		<div class="CommentBox1">
+			<h5>Had fun visiting museum</h5>
+			<p>God for tourists to visit and have fun in also interesting to see all the fun history kept in one ....</p>
+
+		</div>
+	</div>
+	<a href="ReviewsOfBritishMuseum.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+
+	<div class= "favBox1">
+		  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+
+
+		
+	</div>
+
+
+	</div>
+		<a href="BritishMuseum.html" target="_self" data-role="button" id="ui-btn">Book British Museum</a>	
+		<br>
+	
+
+		<!--2-->
+	<div class ="Content">
+	
+	<div class="Img">
+		<img src ="ux_images/BritishMuseum2.jpg">
+			
+	</div>
+		
+		   
+	<div class="context">
+		<h5>Buckingham Place</h5>
+		<p> 
+		Buckingham Palace is the London home and the administrative center of the British royal family. This is an important site of ceremonial and political affairs in the United Read more...
+		</p>
+		
+		<div class= "hourPriceBox">
+		
+			<h5>Suggested duration</h5>
+			<p>	2-3 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit Buckingham Palace From £60 </p>
+		</div>
+	</div>
+			
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+
+		</div>
+		<div class="CommentBox1">
+			<h5>Beautiful buildings</h5>
+			<p>Such a beautiful building to visit, visited on a sunny day and there was a lovely floral display....</p>
+
+		</div>
+	</div>
+		<a href="ReviewsOfBuckinghamPalace.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+
+	<div class= "favBox1">
+		<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+	</div>
+
+
+	</div>
+		<a href="BuckinghamPalace.html" target="_self" data-role="button" id="ui-btn">Book Buckingham Palace</a>	
+		<br>
+
+<!--3-->
+
+	<div class ="Content">
+
+	<div class="Img">
+		<img src ="ux_images/LondonEye.jpg">
+		
+	</div>
+	
+	   
+	<div class="context">
+		<h5>London Eye</h5>
+		<p>
+		The London eye is a very well known structure in London. It is a very massive ferries wheel that sits on the south bank of the river thames Read more...
+		</p>
+	
+		<div class= "hourPriceBox">
+	
+			<h5>Suggested duration</h5>
+			<p>	1-2 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit London Eye From £25.71 </p>
+		</div>
+	</div>
+		
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+	
+		</div>
+		<div class="CommentBox1">
+			<h5>One of the amazing times</h5>
+			<p>Had a great time with friends. Quite busy on the weekend but still its worth the trouble....</p>
+	
+		</div>
+	</div>
+		<a href="ReviewsOfLondonEye.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+	
+	<div class= "favBox1">
+		<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+	
+	
+	</div>
+		<a href="LondonEye.html" target="_self" data-role="button" id="ui-btn">Book London Eye</a>	
+		<br>
+
+	<!--4-->
+	<div class ="Content">
+
+	<div class="Img">
+		<img src ="ux_images/Victoria&AlbertMuseum.jpg">
+		
+	</div>
+	
+	   
+	<div class="context">
+		<h5>V&A - Victoria and Albert Museum</h5>
+		<p>
+		The world's greatest museum of art and design.The V&A's collections are unrivalled in their diversity. Explore historical and contemporary art and Read more...
+		</p>
+	
+		<div class= "hourPriceBox">
+	
+			<h5>Suggested duration</h5>
+			<p>	1-2 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit V&A Museum From £0 </p>
+		</div>
+	</div>
+		
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+	
+		</div>
+		<div class="CommentBox1">
+			<h5>Perfect place</h5>
+			<p>Excellent, my best recommendations. Perfect service and easy contacts....</p>
+	
+		</div>
+	</div>
+		<a href="ReviewsOfV&AMuseum.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>
+		
+	
+	<div class= "favBox1">
+		<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+	
+	
+	</div>
+		<a href="Victoria&AlbertMuseum.html" target="_self" data-role="button" id="ui-btn">Book Victoria and Albert Museum</a>	
+		<br>
+
+<!--5-->
+	<div class ="Content">
+
+	<div class="Img">
+		<img src ="ux_images/stonehenge.jpg">
+		
+	</div>
+	
+	   
+	<div class="context">
+		<h5>Stonehenge</h5>
+		<p>
+		Explore the beautiful Georgian city of Bath and its ancient Roman Baths*, and uncover the mystery behind Stonehenge - the world's most famous Neolithic site.Read more...
+		</p>
+	
+		<div class= "hourPriceBox">
+	
+			<h5>Suggested duration</h5>
+			<p>	2-3 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit Stonehenge From £20 </p>
+		</div>
+	</div>
+		
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+	
+		</div>
+		<div class="CommentBox1">
+			<h5>An experience to rem..</h5>
+			<p>I have heard so much about stonehenge over the years, finally made the trek and was....</p>
+	
+		</div>
+	</div>
+		<a href="ReviewsOfStonehenge.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>
+		
+	
+	<div class= "favBox1">
+		<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+	
+	
+	</div>
+		<a href="Stonehenge.html" target="_self" data-role="button" id="ui-btn">Book Stonehenge</a>	
+		<br>
+	
+<!--6-->
+	<div class ="Content">
+
+	<div class="Img">
+		<img src ="ux_images/TowerOfLondon.jpg">
+		
+	</div>
+	
+	   
+	<div class="context">
+		<h5>Tower of London</h5>
+		<p>
+		Discover London’s castle – a secure fortress, royal palace and infamous prison where you can explore 1000 years of history. Prepare to be dazzled by the breathtaking Read more...
+		</p>
+	
+		<div class= "hourPriceBox">
+	
+			<h5>Suggested duration</h5>
+			<p>	2-3 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit Tower London From £49.66 </p>
+		</div>
+	</div>
+		
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+	
+		</div>
+		<div class="CommentBox1">
+			<h5>Family all had great time</h5>
+			<p>We took our two grandsons and they loved it they were interested in all the armour....</p>
+		</div>
+	</div>
+		<a href="ReviewsOfTowerOfLondon.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>
+		
+	
+	<div class= "favBox1">
+		<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+	
+	
+
+	</div>
+	<a href=" TowerOfLondon.html" target="_self" data-role="button" id="ui-btn">Book  Tower of London</a>	
+
+</div>
+	
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+		
+		<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+		  </div>
+	  </div>
+  </div>
+  
+
+</body>
+</html>

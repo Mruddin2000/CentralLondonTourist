@@ -1,0 +1,1292 @@
+body {
+  text-shadow: none;
+  background: #3f5b80;
+}
+.ui-content {
+  background-color: #3f5b80;
+}
+nav {
+  background: #96acba;
+}
+h1 {
+  margin-bottom: -9%;
+}
+
+#menu {
+  background-color: #96acba;
+  opacity: 85%;
+}
+
+#menu li {
+  opacity: 0.8;
+  background: #d9cfce;
+  color: black;
+  margin-top: 50px;
+}
+purcbtn{
+  background: #d9cfce;
+}
+#btncomment{
+background: #d9cfce;
+font-size: 14px;
+}
+.subHead {
+  background: #d9cfce;
+  color: black;
+  margin-top: 50px;
+}
+#logo img {
+  height: auto;
+  width: 25%;
+  margin-top: 2px;
+  margin-left: 39%;
+  border-radius: 10px;
+}
+
+.slideshow {
+  margin-left: -4%;
+}
+.slideshow img {
+  width: 95%;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-left: 4.5%;
+}
+
+#slideshowBtn1 {
+  width: 30%;
+  float: left;
+  text-shadow: none;
+  margin-top: -20%;
+  margin-left: 4%;
+  color: white;
+  border-radius: 8px 1px;
+  border: inset;
+
+  background: rgba(72, 74, 74, 0.5);
+
+  font-size: 14px;
+}
+
+#slideshowBtn2 {
+  text-shadow: none;
+  border-radius: 8px 1px;
+  border: inset;
+  width: 30%;
+  float: right;
+  background: rgba(72, 74, 74, 0.5);
+  color: white;
+
+  margin-top: -20%;
+  font-size: 14px;
+}
+
+.mySlides {
+  display: none;
+}
+#HistoricalBtn {
+  width: 90%;
+  border-radius: 0 0 8px 8px;
+  float: left;
+  margin-top: -11%;
+  font-size: 18px;
+  text-shadow: none;
+  color: white;
+  height: 10px;
+  background: rgba(72, 74, 74, 0.5);
+}
+
+#ActivitiesBtn {
+  width: 90%;
+  border-radius: 0 0 8px 8px;
+  text-shadow: none;
+  float: left;
+  margin-top: -11%;
+  font-size: 18px;
+  color: white;
+
+  height: 10px;
+  background: rgba(72, 74, 74, 0.5);
+}
+#ToursBtn {
+  width: 90%;
+  border-radius: 0 0 8px 8px;
+  text-shadow: none;
+  float: left;
+  height: 10px;
+  margin-top: -6px;
+
+  margin-top: -11%;
+  font-size: 18px;
+  color: white;
+  height: 10px;
+  background: rgba(72, 74, 74, 0.5);
+}
+
+.pHotBox {
+  height: auto;
+  border-radius: 10px;
+  margin-top: 7%;
+  margin-left: 1%;
+  margin-right: 1%;
+
+  background: #c4c4c4;
+}
+.hotBox {
+  height: auto;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: -11%;
+  text-shadow: none;
+  margin-right: 1%;
+
+  background: #c4c4c4;
+}
+
+.hotBox2 {
+  width: 97%;
+  margin: 1%;
+}
+.mainhotBox {
+  border: 2px solid;
+  height: fit-content;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: -6%;
+  background: #96acba;
+  border-radius: 10px;
+}
+
+h4 {
+  background: #c4c4c4;
+  border: ridge;
+  color: black;
+  margin-top: 50px;
+  font-size: 20px;
+
+}
+
+.imgbox {
+  width: 30%;
+  height: 75px;
+
+  margin: 1px;
+  margin-left: 1%;
+  border-radius: 10px;
+
+  border: ridge;
+  display: inline-block;
+}
+
+.imgbox img {
+  height: 75px;
+  width: 100%;
+  border-radius: 10px;
+}
+.SubCat {
+  background: #d9cfce;
+}
+
+
+.header2 {
+  background: #96acba;
+  text-align: center;
+  font-size: 9px;
+  margin-top: 3%;
+  text-shadow: none;
+}
+
+.bigbox {
+  width: 63%;
+  height: 75px;
+  display: inline-block;
+  border-radius: 10px;
+  color: black;
+
+  border: ridge;
+  font-size: 12px;
+  padding: 2px;
+  background: transparent;
+}
+
+.bigbox1 {
+  width: 64%;
+  height: 122px;
+  display: inline-block;
+  border-radius: 10px;
+  color: black;
+
+  border: 1px solid;
+  font-size: 13px;
+  padding: 2px;
+  background: transparent;
+}
+.bigbox2 {
+  width: 64%;
+  height: 115px;
+  display: inline-block;
+  border-radius: 10px;
+  color: black;
+
+  border: 1px solid;
+  font-size: 14px;
+  padding: 2px;
+  background: transparent;
+}
+.checked {
+  color: orange;
+}
+.smallbox {
+  height: 35px;
+  width: 50%;
+  display: inline-flex;
+  background: transparent;
+  border: 1px solid;
+  margin-left: 1px;
+  padding: 2px;
+  margin-bottom: 1%;
+  margin-right: 2px;
+  border-radius: 10px;
+  font-size: 7px;
+}
+
+.CommentBox {
+  height: 38px;
+  width: 50%;
+  display: inline-block;
+  background: transparent;
+  border: ridge;
+  margin-left: 1px;
+  padding: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 2px;
+  border-radius: 10px;
+  font-size: 8px;
+}
+
+.CommentBox h5 {
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+.CommentBox p {
+  margin-top: -5%;
+}
+.CommentBox1 {
+  height: 54px;
+  width: 91%;
+  display: inline-block;
+  background: transparent;
+  border: ridge;
+  margin-left: 1px;
+  padding: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 2px;
+  border-radius: 10px;
+  font-size: 8px;
+}
+
+.CommentBox1 h5 {
+  margin-top: 0;
+  font-size: 9px;
+}
+.CommentBox1 p {
+  font-size: 8px;
+  margin-top: -9%;
+}
+#cmtbtn{
+  border: 1px solid;
+  margin-top: 5px; 
+  border-radius: 10px;
+  background: #d9cfce;
+  }
+
+.ratingbox {
+  height: auto;
+  width: 30%;
+  display: inline-flex;
+  background: transparent;
+  border: ridge;
+  margin-left: 1px;
+  place-content: space-evenly;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+.ratingbox1 {
+  height: auto;
+  width: 95%;
+  display: inline-flex;
+  background: transparent;
+  border: ridge;
+  margin-left: 1px;
+  place-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+
+.favBox {
+  float: right;
+  width: 10%;
+  margin-right: 4%;
+  margin-top: -14%;
+}
+
+.favBox img {
+  width: 100%;
+  height: 90%;
+}
+
+.favBox1 {
+  float: right;
+  width: 10%;
+  margin-right: 2%;
+  margin-top: -14%;
+}
+
+.favBox1 img {
+  width: 100%;
+  height: 90%;
+}
+#ui-btn {
+  border: 1px solid;
+  margin-top: 5px;
+  background:#d9cfce;
+  border-radius: 10px;
+}
+#ui-btn1 {
+  border: 1px solid;
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 40%;
+  background:#d9cfce;
+  margin-left: 36%;
+  margin-top: -12%;
+}
+
+.miniBox {
+  border: ridge;
+  height: 85px;
+  width: 34%;
+  border-radius: 10px;
+  margin-top: -35px;
+}
+
+.Vid{
+  height: 280px; width: 97.5%
+}
+
+/*Review Page*/
+.RContext{
+background:#c4c4c4;
+margin-top: -4%;
+margin-bottom: 17%;
+
+}
+
+#btnlikReply{
+margin-top: -3%;
+}
+#backbtn {
+  width: 11%;
+}
+#myform,
+#myform1,
+#myform2,
+#myform3,
+#myform4,
+#myform5,
+#myform6,
+#myform7,
+#myform8,
+#myform9,
+#myform10,
+#myform11,
+#myform12 {
+  margin-top: -11%;
+  background: #c4c4c4;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-shadow: none;
+}
+.formdata {
+  padding: 25px;
+  padding-top: 115px;
+}
+
+.Points {
+  float: right;
+  margin-top: -14%;
+  margin-right: 7%;
+  font-size: 36px;
+  border: 1px dotted;
+}
+
+.miniBox1 {
+  border: ridge;
+  height: 100px;
+  width: 31%;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+.miniBox1 h4 {
+  background: #d9cfce;
+  color: black;
+  margin-top: 0%;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.miniBox2 {
+  float: right;
+  width: 10%;
+  margin-right: 2%;
+  margin-top: 1%;
+  background: #d9cfce;
+  border: outset;
+}
+
+.rating_reviews{
+  background: #c4c4c4;
+}
+
+.miniBox2 img {
+  width: 100%;
+  height: 90%;
+}
+.context {
+  border: ridge;
+  height: 70%;
+  width: 62%;
+  margin-left: 0.5%;
+  border-radius: 10px;
+  display: inline-block;
+}
+.context h5 {
+  font-size: 11px;
+  margin-top: 1px;
+  padding: 1px;
+  text-align: center;
+}
+.context p {
+  font-size: 11px;
+  margin-top: -15px;
+  padding: 1px;
+}
+
+.Content {
+  border: 1px solid black;
+  height: 215px;
+  margin: 2px;
+  margin-top: -2.5%;
+  border-radius: 10px;
+  background: #c4c4c4;
+  text-shadow: none;
+}
+
+.hourPriceBox {
+  float: left;
+  width: 42%;
+  margin-left: 5%;
+  height: 37%;
+  display: block;
+  font-size: -12px;
+  border-radius: 10px;
+  border: ridge;
+}
+.form1 {
+  margin-top: -20%;
+}
+
+.orderimg {
+  height: 50%;
+  border: 1px solid;
+  float: left;
+  width: 50%;
+}
+.orderdetails {
+  height: 40%;
+  border: 1px solid;
+  float: right;
+  width: 40%;
+}
+.orderdetails2 {
+  height: 40%;
+  width: 50%;
+  display: block;
+  border: 1px solid;
+  float: left;
+}
+
+.Img {
+  width: 34%;
+  height: 115px;
+  border-radius: 10px;
+  float: left;
+  margin: 2px;
+}
+.Img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.ui-content {
+  margin-top: -5%;
+  width: 100%;
+  margin-left: -16px;
+}
+#LogoHeader {
+  background: #96acba;
+}
+#icon {
+  margin-top: 12px;
+  margin-left: 10px;
+  background: #96acba;
+}
+
+.header {
+  background: #96acba;
+  text-align: center;
+  font-size: 8px;
+  margin-top: -1%;
+  text-shadow: none;
+}
+.mheader {
+  background: #96acba;
+  text-align: center;
+  font-size: 8px;
+  margin-top: -1%;
+  text-shadow: none;
+}
+.mheader h1 {
+  margin: 9px;
+}
+
+.inlinestyle {
+  margin-left: 5px;
+  width: 50%;
+}
+
+.form-control {
+  width: 78%;
+  margin-top: -2px;
+}
+
+.imgBox {
+  height: 250px;
+  margin: 2px;
+}
+.imgBox img {
+  height: 250px;
+  width: 100%;
+}
+
+.imgbox2 {
+  width: 30%;
+  height: auto;
+  margin: 1px;
+  margin-left: 1%;
+  border-radius: 10px;
+  border: ridge;
+  display: inline-block;
+}
+.imgbox2 img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.contentBox {
+  border: 1px solid;
+  padding: 2px;
+  text-shadow: none;
+  height: auto;
+  margin: 2px;
+  background: #c4c4c4;
+}
+.contentBox2 {
+  border: 1px solid;
+  padding: 15px;
+  text-shadow: none;
+  height: auto;
+  margin: 2px;
+  margin-bottom: 25%;
+  margin-top: 15%;
+  background: #c4c4c4;
+}
+
+.datePicker {
+  width: 40%;
+  border: 1px solid;
+  height: 60px;
+  display: inline-flex;
+  margin: 2px;
+}
+.People {
+  width: 40%;
+  border: 1px solid;
+  height: 60px;
+  float: right;
+  margin: 2px;
+}
+h2 {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.Box1 img {
+  height: auto;
+  width: 10%;
+  margin-top: 20px;
+  margin-left: 2%;
+  float: left;
+}
+
+.Box2 img {
+  height: auto;
+  width: 10%;
+  margin-top: 6%;
+  margin-right: 1%;
+  float: right;
+}
+
+#right-panel {
+  background: #96acba;
+  text-shadow: none;
+}
+.Box {
+  background: #96acba;
+  margin: 3px;
+}
+
+.Box a {
+  margin-top: -15%;
+  width: 67%;
+  margin-left: 13%;
+}
+#linkpanel {
+  margin-top: -25%;
+  width: 70%;
+  margin-left: 15%;
+}
+.footbar {
+  height: fit-content !important;
+  margin-top: 2px !important;
+  width: 100%;
+  float: left;
+  background: #96acba;
+  border-radius: 10px;
+  margin-bottom: 0 !important;
+}
+.footbar img {
+  width: 8%;
+  margin-left: 11%;
+}
+#bookingbtn {
+  float: left;
+  width: 75%;
+  background: #d9cfce;
+}
+.footbar-link1 {
+  border: inset;
+  color: black;
+  text-decoration-line: none;
+  border-block-color: white;
+}
+.footbar-link2 {
+  border: inset;
+  color: black;
+  text-decoration-line: none;
+
+  border-block-color: white;
+  float: right;
+  margin-right: 10%;
+}
+
+.qrCode {
+  margin: 17%;
+}
+
+#mainbox {
+  border: 1px solid black;
+  height: auto;
+  margin: 2px;
+  margin-top: -5px;
+  border-radius: 10px;
+  background: #c4c4c4;
+  text-shadow: none;
+}
+.detailsbox {
+  border: ridge;
+  height: 30%;
+  width: 46%;
+  margin-left: 0.5%;
+  border-radius: 10px;
+  display: inline-block;
+}
+.pic {
+  border: 1px solid black;
+  width: 50%;
+  height: 150px;
+  border-radius: 10px;
+  float: left;
+  margin: 2px;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#frmBooking {
+  margin-top: 10%;
+}
+#frmBooking label {
+  font-weight: bolder;
+}
+
+#Commentbox {
+  background-color: #c4c4c4;
+}
+
+#Reply{
+width: auto;
+float: left;
+font-size: 9px;
+margin-left: 1%;
+margin-bottom: 0;
+background: #d9cfce;
+}
+
+#Reply :hover{
+  background: blue;
+}
+
+
+#LikeDislike{
+  width: auto;
+  float: right;
+font-size: 9px;
+margin-right: 1%;
+background: #d9cfce;
+}
+
+.thankyou{
+  background: #c4c4c4;
+  font-size: 17px;
+  padding: 11px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #logo img {
+    height: auto;
+    width: 15%;
+    margin-top: 2px;
+    margin-left: 42%;
+    border-radius: 10px;
+  }
+
+  .mheader {
+    background: #96acba;
+    text-align: center;
+    font-size: 9px;
+    margin-top: 3%;
+    text-shadow: none;
+  }
+  .mheader h1 {
+    margin: 9px;
+  }
+
+  .slideshow {
+    margin-left: -4%;
+  }
+  .slideshow img {
+    width: 78%;
+    border-radius: 10px;
+    margin-top: 1%;
+    /* height: 77% !important; */
+    margin-left: 13%;
+  }
+
+  #slideshowBtn1 {
+    width: 25%;
+
+    float: left;
+
+    text-shadow: none;
+
+    margin-top: -20%;
+
+    margin-left: 13%;
+
+    border-radius: 8px 1px;
+
+    border: inset;
+
+    background: rgba(72, 74, 74, 0.5);
+
+    font-size: 14px;
+  }
+
+  #slideshowBtn2 {
+    text-shadow: none;
+    border-radius: 8px 1px;
+    border: inset;
+    margin-right: 9%;
+    width: 25%;
+    float: right;
+    background: rgba(72, 74, 74, 0.5);
+    color: white;
+    margin-top: -20%;
+    font-size: 14px;
+  }
+  .mySlides {
+    display: none;
+  }
+  .hotBox2 img{
+    width: 85% !important;
+    margin-left: 8%;
+  }
+
+  #HistoricalBtn {
+    width: 77.5%;
+    border-radius: 0 0 8px 8px;
+    float: left;
+    margin-top: -8%;
+    font-size: 23px;
+    margin-left: 8%;
+    text-shadow: none;
+    color: white;
+    height: 10px;
+    background: rgba(72, 74, 74, 0.5);
+  }
+
+  #ActivitiesBtn {
+    width: 78.5%;
+    margin-left: 8%;
+    border-radius: 0 0 8px 8px;
+    text-shadow: none;
+    float: left;
+    margin-top: -7%;
+    font-size: 21px;
+    color: white;
+    height: 10px;
+    background: rgba(72, 74, 74, 0.5);
+  }
+  #ToursBtn {
+    width: 78.5%;
+    margin-left: 8%;
+    border-radius: 0 0 8px 8px;
+    text-shadow: none;
+    float: left;
+    height: 10px;
+    margin-top: -6px;
+    margin-top: -7%;
+    font-size: 21px;
+    color: white;
+    height: 10px;
+    background: rgba(72, 74, 74, 0.5);
+  }
+
+  .mainhotBox {
+    border: 2px solid;
+
+    height: fit-content;
+
+    width: 100%;
+
+    margin-top: 2%;
+
+    margin-left: -22px;
+
+    background: #96acba;
+
+    border-radius: 10px;
+  }
+  .mainhotBox p{
+    padding: 5px;
+    text-shadow: none;
+
+  }
+  .hotBox {
+    height: auto;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: -6%;
+    text-shadow: none;
+    margin-right: 0%;
+    background: #c4c4c4;
+  }
+  .bigbox {
+    width: 65%;
+    height: 126px;
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    border: ridge;
+    font-size: 20px;
+    padding: 2px;
+    background: transparent;
+  }
+
+  .CommentBox {
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    background: transparent;
+    border: ridge;
+    margin-left: 1px;
+    padding: 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .CommentBox h5 {
+    margin-top: 0%;
+    margin-bottom: 7%;
+  }
+  .CommentBox p {
+    margin-top: -5%;
+  }
+
+  .imgbox {
+    width: 30%;
+    height: 125px;
+    margin: 1px;
+    margin-left: 1%;
+    border-radius: 10px;
+    border: ridge;
+    display: inline-block;
+  }
+
+  .imgbox img {
+    height: 126px;
+
+    width: 100%;
+
+    border-radius: 10px;
+  }
+
+  .favBox {
+    float: right;
+
+    width: 10%;
+
+    margin-right: 4%;
+
+    margin-top: -10%;
+  }
+
+  .footbar {
+    height: fit-content !important;
+    margin-top: 4px !important;
+    width: 100%;
+    float: left;
+    background: #96acba;
+    border-radius: 10px;
+    margin-bottom: -2px !important;
+  }
+  .footbar img {
+    width: 5%;
+    margin-left: 14%;
+  }
+
+  .miniBox {
+    border: ridge;
+    height: 92px;
+    width: 34%;
+    border-radius: 10px;
+    margin-top: -37px;
+  }
+  .context h5 {
+    font-size: 15px;
+    margin-top: 1px;
+    padding: 1px;
+    text-align: center;
+  }
+  .context p {
+    font-size: 13px;
+    margin-top: -25px;
+    padding: 1px;
+  }
+
+  .favBox1 {
+    float: right;
+    width: 7%;
+    margin-right: 2%;
+    margin-top: -9%;
+  }
+  /*british museum*/
+
+  #bookingbtn {
+    float: left;
+    width: 81%;
+    margin-left: 3px;
+  }
+  .miniBox2 {
+    float: right;
+    width: 8%;
+    margin-right: 2%;
+    margin-top: 1%;
+    background: #96acba;
+    border: outset;
+  }
+  .miniBox2 img {
+    width: 65%;
+    margin-left: 16%;
+    margin-top: -3%;
+  }
+
+  .Content {
+    height: 215px;
+    margin: 1px;
+    margin-top: -3%;
+    border-radius: 10px;
+    background: #96acba;
+    text-shadow: none;
+  }
+  .context {
+    border: ridge;
+    height: 70%;
+    width: 64%;
+    margin-left: 0.5%;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #Backbtn {
+    margin-bottom: 3%;
+
+    margin-top: 0%;
+  }
+
+  .CommentBox1 p {
+    font-size: 10px;
+    margin-top: -9%;
+  }
+
+  .CommentBox1 h5 {
+    margin-top: 0;
+    font-size: 11px;
+  }
+  #ui-btn1 {
+    border: 1px solid;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 36%;
+    margin-top: -8%;
+  }
+
+  /*bookingofbritishMuseum*/
+
+  .miniBox1 {
+    border: ridge;
+    height: 100px;
+    width: 32%;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: -10px;
+  }
+  #paneldate {
+    margin-top: -10% !important;
+    width: 79% !important;
+    margin-left: 9% !important;
+    background: #d9cfce;
+  }
+  .Box1 img {
+    height: auto;
+    width: 6%;
+    margin-top: 10px;
+    margin-left: 2%;
+    float: left;
+  }
+  .Box2 img {
+    height: auto;
+    width: 6%;
+    margin-top: 2%;
+    margin-right: 1%;
+    float: right;
+  }
+  #myform {
+    margin-top: -10%;
+    background: #c4c4c4;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    text-shadow: none;
+  }
+
+  #Commentbox {
+    background-color: #c4c4c4;
+  }
+
+  #listBox {
+    width: 90%;
+    border: 2px solid blue;
+    padding: 26px;
+    margin: 4px;
+    font-weight: bold;
+  }
+ 
+ 
+  .header {
+    background: #96acba;
+    text-align: center;
+    font-size: 9px;
+    margin-top: 3%;
+    text-shadow: none;
+  }
+  h1 {
+    margin-bottom: -5%;
+    margin-top: 3%;
+  }
+
+  .Points {
+    float: right;
+    margin-top: -8%;
+    margin-right: 7%;
+    font-size: 36px;
+    border: 1px dotted;
+  }
+
+  .detailsbox {
+    border: ridge;
+    height: 30%;
+    margin-top: 3px;
+    width: 47%;
+    margin-left: 0.5%;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .imgBox img {
+    height: 250px;
+    width: 85%;
+    margin-left: 8%;
+  }
+  #myform,
+  #myform1,
+  #myform2,
+  #myform3,
+  #myform4,
+  #myform5,
+  #myform6,
+  #myform7,
+  #myform8,
+  #myform9,
+  #myform10,
+  #myform11,
+  #myform12 {
+    margin-top: -8%;
+    background: #c4c4c4;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    text-shadow: none;
+  }
+  /*Contact Page*/
+
+  .pHotBox {
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: #c4c4c4;
+  }
+  .bigbox1 {
+    width: 66%;
+    height: 183px;
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    border:ridge;
+    font-size: 23px;
+    padding: 2px;
+    background: transparent;
+  }
+  .bigbox2 {
+    width: 66%;
+    height: 190px;
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    border:ridge;
+    font-size: 24px;
+    padding: 2px;
+    background: transparent;
+  }
+  /*Review Page*/
+.RContext{
+  background: #c4c4c4;
+  margin-top: -2%;
+  margin-bottom: 55px;
+  
+  }
+
+  .header2 {
+    background: #96acba;
+    text-align: center;
+    font-size: 9px;
+    margin-top: 3%;
+    text-shadow: none;
+  }
+
+  #Reply{
+    width: auto;
+    float: left;
+    font-size: 9px;
+    margin-top: -3%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    background: #d9cfce;
+    }
+    
+    #Reply :hover{
+      background: blue;
+    }
+    
+    
+    #LikeDislike{
+      width: auto;
+    float: right;
+    font-size: 9px;
+    margin-top: -3%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    }
+    #btnlikReply {
+      margin-top: 4%;
+    }
+    .thankyou{
+      background: #c4c4c4;
+      font-size: 20px;
+      padding: 11px;
+    }
+
+    .qrCode{
+      margin: 5%;
+      margin-left: 31%;
+    }
+
+    #BM_DIV{
+      background: #c4c4c4;
+    }
+
+    #removecontent1{
+      background: #d9cfce;
+    }
+    .contentBox2 {
+      border: 1px solid;
+      padding: 15px;
+      text-shadow: none;
+      height: auto;
+      margin: 2px;
+      margin-bottom: 2%;
+      margin-top: 1%;
+      background: #c4c4c4;
+    }
+}

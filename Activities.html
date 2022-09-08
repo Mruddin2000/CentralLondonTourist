@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src ="JavaScripts.js"></script>	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+
+    <div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+			<ul data-role="listview">
+			<li><a href="#Home.html" target="_self">Home</a></li>
+
+			<li><a href="#Account.html" target="_self">My Account</a></li>
+
+			<li><a href="#ScanQR.html" target="_self">Scan a QR</a></li>
+
+
+	  
+			<div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h4>Attraction Category</h4>
+				    <ul data-role="listview">
+					<li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+					<li><a href="Activities.html" target="_self">Activities</a></li>
+					<li><a href="Tours.html" target="_self">Tours</a></li>
+		    </ul>
+				</div>
+
+				<li><a href="#Favorites.html" target="_self">Favorites</a></li>
+
+			<li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+
+			<li><a href="#About.html" target="_self">About Us</a></li>
+			</ul>
+		</div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+		<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+		<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+
+
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+	
+
+			<div id="custom-border-radius" class ="header">
+				<h1>Activities</h1>
+				    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"id="Backbtn" data-rel = "back" data-transition="slidefade">No text</a>
+							
+			</div>
+ 			
+
+		
+	<!--1-->
+	<div class ="Content">
+	
+	<div class="Img">
+		<img src ="ux_images/RegentsPark.jpeg">
+	
+	</div>
+
+   
+	<div class="context">
+		<h5>Regent Park</h5>
+		<p> 
+		Originally a royal hunting ground, this scenic park is a popular recreation area offering an artificial lake, tennis courts, cricket ground, children Read more...
+		</p>
+
+		<div class= "hourPriceBox">
+
+			<h5>Suggested duration</h5>
+			<p>	1-2 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+				<p>Visit Regent Park From £0 </p>
+		</div>
+	</div>
+	
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+
+		</div>
+		<div class="CommentBox1">
+			<h5>One of the relaxed places</h5>
+			<p>People playing games, walking dogs, martial arts it was fun relaxing place to be....</p>
+
+		</div>
+	</div>
+	<a href="ReviewsOfRegentPark.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+
+	<div class= "favBox1">
+	  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+
+
+	</div>
+		<a href="RegentPark.html" target="_self" data-role="button" id="ui-btn">Book Regent Park</a>	
+		<br>
+	
+
+		<!--2-->
+	<div class ="Content">
+	
+	<div class="Img">
+		<img src ="ux_images/HydePark.jpeg">
+			
+	</div>
+		
+		   
+	<div class="context">
+		<h5>Hyde Park</h5>
+		<p> 
+		
+Once the hunting ground for Henry VIII, this large royal park is best known for its famous Speakers' Corner, where people speak their minds, Rotton Row, a famous Read more...
+		</p>
+		
+		<div class= "hourPriceBox">
+		
+			<h5>Suggested duration</h5>
+			<p>	2-3 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit Hyde Park From £0 </p>
+		</div>
+	</div>
+			
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+
+		</div>
+		<div class="CommentBox1">
+			<h5>One of the enjoyable day..</h5>
+			<p>Good place to run, stroll around and get hot coffee or hot chocolate and enjoy time....</p>
+
+		</div>
+	</div>
+		<a href="ReviewsOfHydePark.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+
+	<div class= "favBox1">
+	  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+	</div>
+
+
+	</div>
+		<a href="HydePark.html" target="_self" data-role="button" id="ui-btn">Book Hyde Park</a>	
+		<br>
+
+<!--3-->
+
+	<div class ="Content">
+
+	<div class="Img">
+		<img src ="ux_images/StJamesPark.jpeg">
+		
+	</div>
+	
+	   
+	<div class="context">
+		<h5>St James Park</h5>
+		<p>
+		St James’s Park includes The Mall and Horse Guards Parade, and is surrounded by landmarks such as Buckingham Palace, Clarence House and Whitehall Read more...
+		</p>
+	
+		<div class= "hourPriceBox">
+	
+			<h5>Suggested duration</h5>
+			<p>	1-2 hours </p>
+		</div>
+		<div class= "hourPriceBox">
+			<h5>Price:</h5>
+			<p>Visit St James Park From £0 </p>
+		</div>
+	</div>
+		
+	<div class= "miniBox">
+		<div class="ratingbox1">
+			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+	
+		</div>
+		<div class="CommentBox1">
+			<h5>A whole world to explore</h5>
+			<p>Only had a few ours, there is so much to see. Will definitely need to come back....</p>
+	
+		</div>
+	</div>
+		<a href="ReviewsOfStJamesPark.html" target="_self" data-role="button" id="ui-btn1">View More Reviews</a>	
+	
+	<div class= "favBox1">
+	  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+	</div>
+	
+	
+	</div>
+		<a href="StJamesPark.html" target="_self" data-role="button" id="ui-btn">Book St James Park</a>	
+		<br>
+
+
+
+	</div>
+
+	
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+		
+		
+		<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+		  </div>
+	  </div>
+  </div>
+  
+
+</body>
+</html>

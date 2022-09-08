@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src ="JavaScripts.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4fxzjh0_9j9aIXCecrSeDxBztKU5Lzao&callback=initMap"
+      defer
+    ></script>
+	
+	<style>
+	
+      #map {
+        height: 150px;
+        width: 100%;
+		margin: 0;
+        padding: 0;
+       }
+	</style>
+	
+	<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = {  lat: 51.49665, lng: -0.17219 }; 
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+		  title: "Victoria & Albert Museum" 
+        });
+      }
+    </script>
+
+</head>
+<body>
+
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+			<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+			<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+		
+		<div id="custom-border-radius" class ="header">
+			<h1>Victoria and Albert Museum</h1>
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back" data-transition="slidefade">No text</a>
+						
+		</div>
+	
+		
+
+<div class="imgBox">
+
+    <img src="ux_images/Victoria&AlbertMuseum.jpg">
+</div>
+
+<div class="contentBox">
+  <h3>Overview</h3>
+  <p>
+  The Victoria and Albert Museum in London is the world's 
+  largest museum of applied arts, decorative arts, and design, 
+  housing a permanent collection of over 2.27 million objects. 
+  The world's greatest museum of art and design.The V&A's 
+  collections are unrivalled in their diversity. Explore 
+  historical and contemporary art and design, including 
+  works of art from many of the world's richest cultures. 
+</p>
+  <div class= "miniBox1">
+   <h4> Suggested duration </h4>
+
+1-2 hours
+	</div>
+	<div class= "miniBox1">
+   <h4> Price: </h4>
+   
+Book tour for £0.00
+	</div>
+	<div class= "miniBox1">
+   <h4> Opening times </h4>
+
+11.00 am - 7.00pm
+</div>
+
+</div>
+
+<div>
+
+
+
+
+<a href="BookingOfVictoria&AlbertMuseum.html" target="_self" id ="bookingbtn" data-role="button">Book Victoria & Albert Museum </a>
+
+<div class= "miniBox2">
+    	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+</div>  
+</div>
+</div>
+
+<div id="MapBox">
+     <!--The div element for the map-->
+     <div id="map"></div>
+     <p>Cromwell Rd, London SW7 2RL</p>
+</div>
+<div id="VideoBox">
+    <embed class="Vid" style="height: 280px; width: 97.5%; padding: 1%;" src="https://www.youtube.com/embed/Jh2MwyY1Hlg" ></embed>
+</div>
+
+
+<div class= "rating_reviews"> 
+  <h3>Ratings and Reviews</h3>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+<p>
+  <h4>Perfect place </h4>
+Excellent, my best recommendations. Perfect service and easy contacts....
+</p>
+<p>
+ <h4> Amazing as always </h4>
+ That was a great time to be and although it was a lot croweded it cannot shadow the beauty of this place...
+</p>
+<p>
+  <h4> Must be visited in London </h4>
+This is a must visit place in London. One of my favourite places when it is raining but make sure that you take your time there....
+</p>
+
+<a href="ReviewsOfV&AMuseum.html" target="_self" id ="cmtbtn" data-role="button"> View More Comments </a>
+<br>
+
+
+</div>
+
+
+
+
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+	
+	
+	<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+	  </div>
+  </div>
+
+
+</body>
+</html>

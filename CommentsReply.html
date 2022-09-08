@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+
+<style type="text/css" media="screen">
+	
+	#listBox1{
+		width: 310px;
+    height: 81% !important;
+    border: 2px solid blue;
+    padding: 26px;
+    margin: 4px;
+    margin-top: 37%;
+    font-weight: bold;
+	}
+
+	#cmntbtn{
+    margin-top: 20%;
+  }
+  .ui-field-contain{
+margin-bottom: 18%;
+margin-top: 15%;
+  }
+
+  .ui-field-contain label{
+	margin-top: -15%;
+    margin-bottom: 12%;
+    text-align: center;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	#listBox1{
+
+    width: 90%;
+    height: 80% !important;
+    border: 2px solid blue;
+    padding: 26px;
+    margin: 4px;
+    margin-top: 0%;
+    font-weight: bold;
+	}
+
+	#cmntbtn{
+    margin-top: 20%;
+  }
+  .ui-field-contain{
+	margin-bottom: 6%;
+    margin-top: 8%;
+	width: 128%;
+
+}
+  
+
+  .ui-field-contain label{
+	margin-top: -6%;
+    margin-left: 28%;
+    margin-bottom: 0%;
+  }
+
+
+  
+}
+	
+	</style>
+<body>
+
+     
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+			<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+			<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+
+	<div class="ui-content"> 
+
+	
+
+		<div id="custom-border-radius" class ="header">
+			<h1> Comments</h1>
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back" data-transition="slidefade">No text</a>
+						
+		</div>
+		 <!--Comments-->
+		 
+	<div id="Commentbox">	
+		<form id="FormName" action="(EmptyReference!)" method="get" name="FormName">
+			<fieldset data-role="controlgroup">
+			</fieldset>
+		
+		<!--Adjust your code so the comments are displayed nicely styled. Make sure you overide old comments. See how you can grap the comments from this page and make it appear in the page with the Detailed Point of Intereset Pages-->
+	
+		
+			<fieldset id="hiddenFieldset">
+				<div class="ui-field-contain">
+					<label for="inputBox">Add your comment:</label>
+					<input type="text" name="inputBox" id="inputBox" placeholder="Text input" value="">
+				</div>	
+				<button id="add" type="button" id="cmntbtn">Add</button>
+				<div id="listBox1">Display comment</div>
+			</fieldset>
+					
+	
+			</form>
+			
+			<script type="text/javascript">
+				function addOption() {
+					listBox.appendChild(new Option(inputBox.value,inputBox.value));
+					inputBox.value = "";
+				}
+	
+				window.onload = function() {
+					hiddenFieldset = document.getElementById("hiddenFieldset");
+					inputBox = document.FormName.inputBox;
+					listBox = document.getElementById("listBox1");
+	
+					hiddenFieldset.style.display = "block";
+					document.getElementById("add").onclick = addOption;
+				}
+				//-->
+				</script>
+	
+
+	</div>
+
+
+</div>
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+    
+    <div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+      </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

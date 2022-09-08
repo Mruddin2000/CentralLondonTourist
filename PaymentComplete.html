@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+ 
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+		<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+		<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+		
+		<div id="custom-border-radius" class ="header">
+			<h1>Payment Completed!</h1>
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back" data-transition="slidefade">No text</a>
+						
+		</div>
+	
+		
+<div class="thankyou">
+	<p>
+		Thank you for making your booking and you have recieved an email receipt as well please check your email. To receive rewards/points please scan this QR Code
+	</p>
+</div>
+
+<div class="qrCode">
+	<a href="ARpage_box.html" rel="external"><img src="ux_images/scan.jpg"></a>
+
+</div>
+<a href="Comments.html" target="_self" id ="btncomment" data-role="button">Click here to give us feedback about your journey</a>
+
+</div>
+
+
+
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+	
+	<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+	  </div>
+  </div>
+
+
+</body>
+</html>

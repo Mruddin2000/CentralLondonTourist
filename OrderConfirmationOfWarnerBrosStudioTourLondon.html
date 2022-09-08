@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Confirmation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+
+   
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+			<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+			<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+    </div>
+
+
+	
+
+	<div class="ui-content"> <!-- You missed to create a content area -->
+		<div id="custom-border-radius" class ="header">
+			<h1>Order Confirmation of Warner Bros Studio Tour London </h1> 
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back"data-transition="slidefade">No text</a>
+		</div>
+
+        <div id ="mainbox">
+	
+            <div class="pic">
+				<img src="ux_images/WarnerBrosStudioTour.jpeg">
+            
+            </div>
+
+        
+           
+            <div class="detailsbox">
+                Warner Bros Studio Tour London
+
+				
+				<br>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+        
+    
+			<br>
+
+			<br>
+				Date: 8/05/2022 
+				
+				
+				People: 3 
+
+				<br>
+				
+			 <span style="color:blue" >Non-refundable</span>
+
+            
+		</div>
+		<br>
+		<br>
+		Exclusive Tour-16:20
+		<hr>
+		<form id="frmBooking" name="bookingForm" action="_self">
+			<label for="item_name">Event Title</label>
+			<input id="item_name" name="item_name" type="text" readonly="readonly" value="Warner Bros Studio Tour London"> 
+			<label for="total_value">Event Price</label>
+			<input id="total_value" name="total_value" type="text" readonly="readonly" value="98"> 
+			<button id="customButton" style="
+			background: #d9cfce;">Purchase</button>
+		</form>
+		
+		<div align="center" id="thankyouPayment">
+		</div>
+<!-- This is the script that connects the form to StripeCheckout -->
+<!-- Code Section A Grab the booking form and initialise the stripe checkout form -->
+
+    <script>
+    jQuery(function($) {
+      var $form = $('#frmBooking');
+      var handler = StripeCheckout.configure({
+        key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+        token: function(token) {
+          // Use the token to create the charge with a server-side script.
+          // You can access the token ID with `token.id`
+
+          //This will be printed when the transaction is successful. To charge, server side scripting is required.
+          if(token.id){
+					$("#thankyouPayment").html("Thank you, your payment was successful! <br/> <br/>"
+					
+					+ "Your Event is " + $('#item_name').val() + "<br/><br/>" +
+
+					"Your Total price is " +
+					
+					$('#total_value').val() );
+
+					
+					Function();
+					setAlert();
+                    
+                    //You can also use the following code to re-submit the form content to another file for further processing.
+                    //Don't forget to add action to your form
+                    //$form.get(0).submit();
+
+                    //Or save form data locally, using local storage.
+          }
+        }
+      });
+	  
+
+      $('#customButton').on('click', function(e) {
+        // Code Section B  Open Checkout with further options
+        handler.open({
+          name: 'Payment Process',
+          currency: 'gbp',
+          description: $('#item_name').val(),
+          amount: $('#total_value').val() * 100*3
+		});
+        e.preventDefault();
+      });
+
+      // Code Section C  Close Checkout on page navigation
+      $(window).on('popstate', function() {
+        handler.close();
+      });
+      });
+
+	  
+	  function Function() {
+		setTimeout(Time, 7000);
+		}
+		function Time() {
+			window.location="PaymentComplete.html";
+		}
+		
+	
+		function setAlert() {
+alert("You will be redirected to next page shortly. Click Ok")
+
+}
+    </script>
+	
+	</div>
+		
+
+		</div>
+
+	
+
+		
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+			
+    
+    <div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+      </div>
+      
+</div>
+</div>
+</div>
+</body>
+</html>

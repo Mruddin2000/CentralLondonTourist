@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src ="JavaScripts.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+ 
+	<div data-role="page" id="page1">
+	
+    <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+        <ul data-role="listview">
+        <li><a href="Home.html" target="_self">Home</a></li>
+
+        <li><a href="Account.html" target="_self">My Account</a></li>
+
+        <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+
+
+  
+        <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                <h4>Attraction Category</h4>
+                <ul data-role="listview">
+                <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                <li><a href="Activities.html" target="_self">Activities</a></li>
+                <li><a href="Tours.html" target="_self">Tours</a></li>
+        </ul>
+            </div>
+
+            <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+
+        <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+
+        <li><a href="About.html" target="_self">About Us</a></li>
+        </ul>
+    </div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+		<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+		<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+
+	<div class="ui-content"> 
+
+    <div id="custom-border-radius" class ="header">
+			<h1>Booking of London Eye</h1>
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back" data-transition="slidefade">No text</a>
+						
+		</div>
+    
+<div class="imgBox">
+
+    <img src="ux_images/LondonEye.jpg">
+</div>
+
+<div class="contentBox">
+  <p>  Free Cancellation </p>
+  <p> Cancel at least 2 day in advanced. 
+
+The London eye is a very well known structure in London. It is a very massive ferries wheel that sits on the south bank of the river thames.
+</p>
+</div>
+<div class="Box">
+    <div class="Box1">
+        <img src ="ux_images/calendar.png">
+        </div>
+        <div class="Box2">
+        <img src ="ux_images/users.png"> 
+</div>
+          
+
+  <p> 
+
+   
+    <a style = "
+   margin-top: -15%;
+    width: 66%;
+    margin-left: 14%;
+    background:#d9cfce;" 
+    href="#right-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini" id="paneldate">Select Date and People</a>
+    </p>
+    </div>
+    <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+                <ul data-role="listview" data-icon="false" style="padding: 25px;
+        padding-top: 115px;">
+                             
+            <form action="reservation.php" method="post">
+                <div class="elem-group inlined">
+                  <label for="adult">Adults</label>
+                  <input type="number" id="adult" name="total_adults" placeholder="1" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="family">Family</label>
+                    <input type="number" id="family" name="total_family" placeholder="1" min="0" required>
+                  </div>
+                <div class="elem-group inlined">
+                  <label for="child">Children</label>
+                  <input type="number" id="child" name="total_children" placeholder="1" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="checkin-date">Date</label>
+                  <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                        
+              </form>
+                </div><!-- /panel left-->
+                </ul>
+         
+       
+  
+
+<form id= "myform3">
+  <h2>Your Details</h2>
+    <label>First Name: <input type="text"></label>
+    <label>Last Name: <input type="text"></label>
+
+    <label>Enter your Email Address<input id= "email" type="text" name="email"></label>  
+
+<label>Enter your Phone Number (optional)    
+<input id= "number" type="number" name="number"></label>
+<input type="checkbox" id="RdPoints" name="RdPoints" value="Redeem Points">
+  <label style= "width: 46%; text-align: center;background: #d9cfce;" for="RdPoints">Redeem Points</label>
+
+  <div class="Points">
+      50
+  </div>
+  <br>
+
+ 
+<input id="submitme" type="button" value="Make Payment" style="
+background: #d9cfce;" onclick="validateForm3(); "/>
+
+
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+  
+  <div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

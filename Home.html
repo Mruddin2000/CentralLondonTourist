@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src ="JavaScripts.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+
+	<div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+            <ul data-role="listview">
+            <li><a href="#Home.html" target="_self">Home</a></li>
+    
+            <li><a href="Account.html" target="_self">My Account</a></li>
+    
+            <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+    
+    
+      
+            <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                    <h4>Attraction Category</h4>
+                    <ul data-role="listview">
+                    <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                    <li><a href="Activities.html" target="_self">Activities</a></li>
+                    <li><a href="Tours.html" target="_self">Tours</a></li>
+            </ul>
+                </div>
+    
+                <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+    
+            <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+    
+            <li><a href="About.html" target="_self">About Us</a></li>
+            </ul>
+        </div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+			<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+			<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+	<div class ="mheader">
+	
+	<h1>Welcome to Central London Tourists attractions. Book events to start Exploring</h1>
+</div>
+	
+	
+		<!-- /Where do you close this row? -->
+		
+
+		<div class="slideshow">
+	  
+		<img class="mySlides" src="ux_images/PtvLondonEye.jpg">
+		<img class="mySlides" src="ux_images/britishMuseam.jpg">
+		<img class="mySlides" src="ux_images/PtvLondonEye2.jpg">
+		<img class="mySlides" src="ux_images/BritishMuseum2.jpg">
+	   
+
+
+	<a href="BritishMuseum.html" target="_self" data-role="button" id ="slideshowBtn1" class="ui-btn ui-icon-carat-r ui-btn-icon-right">British Museum</a>
+		
+
+	<a href="LondonEye.html" target="_self" data-role="button" id ="slideshowBtn2" class="ui-btn ui-icon-carat-r ui-btn-icon-right">London Eye</a>
+
+
+	</div>
+
+	  <script>
+		 var slideIndex = 0;
+			 carousel();
+			 
+			 function carousel() {
+			   var i;
+			   var x = document.getElementsByClassName("mySlides");
+			   for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";
+			   }
+			   slideIndex++;
+			   if (slideIndex > x.length) {slideIndex = 1}
+			   x[slideIndex-1].style.display = "block";
+			   setTimeout(carousel, 2000); // Change image every 2 seconds
+		 } 
+	 
+	 </script>
+
+
+<ul data-role="listview" data-filter="true" id= "search" data-filter-placeholder="Search Popular Places" items">
+	
+		<ol><div class="mainhotBox">
+			<p>Popular Places to Visit</p>
+		<ol>  <div class="hotBox">
+		
+		   <div class="imgbox">
+			<img src ="ux_images/britishMuseam.jpg">
+		  
+		   </div>
+	
+			   <div class="bigbox">
+				   
+			   <h5>British Museum</h5>
+			   <p>	The British Museum is a 
+				   public institution Commited to human...
+				   <a href="BritishMuseum.html" target="_self">Find more></a>
+				</p>
+				   </div>
+				   <div class= "ratingbox">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				 </div>	
+				<div class="CommentBox">
+					<h5>A whole world to explore</h5>
+					
+					<p>	Only had a few hours, there is so much to see. Will definitely be back...
+						<a href="ReviewsOfBritishMuseum.html" target="_self">Find more></a>
+					</p>	
+					</div>
+				
+				 </div>
+				 <div class= "favBox">
+					<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+				  </div>
+		</ol>
+		
+		   
+	<ol>	<div class="hotBox">
+			
+	
+		   <div class="imgbox">
+		<img src="ux_images/LondonEye.jpg">
+		   </div>
+		   <div class="bigbox">
+			<h5>London Eye</h5>
+			   <p>The London eye is a very well known structure in London...
+				   <a href="LondonEye.html" target="_self">Find more></a></p>
+			</div>
+			<div class= "ratingbox">
+
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			 </div>	
+		   <div class="CommentBox">
+			<h5>Amazing Views of our fantastic</h5>
+			<p>	We booked on the official website on the same...
+				<a href="ReviewsOfLondonEye.html" target="_self">Find more></a>
+
+			 </p>
+			  </div>
+			</div>
+			  <div class= "favBox">
+			  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+			  </div>
+		
+
+			
+			</ol>	
+
+			<ol>	<div class="hotBox">
+			
+		
+				<div class="imgbox">
+			 <img src="ux_images/buckingham Palace.jpg">
+				</div>
+				<div class="bigbox">
+				 <h5>Buckingham Palace</h5>
+					<p>Buckingham Palace is recognised around the world as the focus of...
+
+						<a href="BuckinghamPalace.html" target="_self">Find more></a></p>
+				 </div>
+				<div class= "ratingbox">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				 </div>	
+				<div class="CommentBox">
+
+					<h5>A monument of London</h5>
+					<p>A great and monumental place to visit especially when...
+
+						<a href="ReviewsOfBuckinghamPalace.html" target="_self">Find more></a></p>
+
+					</p>
+					
+				</div>
+			</a>
+			</div>
+				 <div class= "favBox">
+				  	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+				  </div>
+			 
+	 				 </ol>
+		   </div>
+	
+	
+
+		   <div class="mainhotBox"> 
+ 
+			<p>Attractions Category</p>
+			<div class="hotBox2">
+				<a href="HistoricalPlace.html" target="_self"></a>
+		
+		
+		
+		
+					<img   src="ux_images/buckingham Palace.jpg" style="width:100%;height:100%; border-radius:10px; margin-top: -6px;"></a>
+		
+				  <!--   Why do you create this as inline CSS? Create an ID or a class and create internal or better external CSS to modify the appearance of those boxes. This code is very mess-->
+		
+		
+					<a href="HistoricalPlace.html" target="_self" id="HistoricalBtn" class="ui-btn">Historical Place</a>
+		
+				</div>
+		
+		
+		
+				<div class="hotBox2">
+					<a href="Activities.html">
+						<img   src="ux_images/Activities.png" style="width:100%;height:100%;border-radius:10px; margin-top: -6px;"></a>
+		
+		
+					<a href="Activities.html" target="_self" id="ActivitiesBtn" class="ui-btn">Activities</a>
+		
+		
+					</div>
+		
+		
+		
+					<div class="hotBox2">
+						<a href="Tours.html">
+							<img   src="ux_images/busTour.png" style="width:100%;height:100%;border-radius:10px; margin-top: -6px;"></a>
+		
+		
+		<a href="Tours.html" target="_self" id="ToursBtn" class="ui-btn">Tours</a>
+		
+		
+						</div>
+		
+			</div>
+			</div>
+		
+ 
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+		
+		<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+		  </div>
+	  </div>
+  </div>
+  
+
+</body>
+</html>

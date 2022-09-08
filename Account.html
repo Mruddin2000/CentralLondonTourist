@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href = "Account.css">
+<link rel="stylesheet" href ="Home.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<link rel="icon" href="ux_images/Logo.jpeg" type="image/icon type">
+
+<body>
+      <div data-role="page" id="page1">
+	
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+			<ul data-role="listview">
+			<li><a href="Home.html" target="_self">Home</a></li>
+
+			<li><a href="Account.html" target="_self">My Account</a></li>
+
+			<li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+
+
+	  
+			<div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h4>Attraction Category</h4>
+				    <ul data-role="listview">
+					<li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+					<li><a href="Activities.html" target="_self">Activities</a></li>
+					<li><a href="Tours.html" target="_self">Tours</a></li>
+		    </ul>
+				</div>
+
+				<li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+
+			<li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+
+			<li><a href="About.html" target="_self">About Us</a></li>
+			</ul>
+		</div><!-- /panel left-->
+
+    <div  data-role="header"  data-position="fixed"style ="background: #96ACBA;" >
+    
+        <div id ="logo">
+
+            <a href = "Home.html" target="_self">
+        <img  src  ="ux_images/Logo-iphone.jpg" style ="height:auto;width:25%; margin-top:2px; margin-left:35%;"/> 
+        </a>
+        </div>
+
+        <a href="#menu" data-icon="bars" data-iconpos="notext" style="margin-top: 12px;margin-left: 10px; background: #96ACBA;" >Menu</a>
+                                            
+    </div>
+
+    <div class="heading"><h1>My Account</h1></div>
+
+    <section class="profile-top grid grid-cols-2">
+        <div cols="avatar-col"> 
+            <p class="profile__welcome-text">Welcome Back Gary!</p>
+            <img class="profile__avatar-img" src="ux_images/avatar.png" alt="">
+        </div>
+        <div class="points-col">
+            <p class="profile__points-text">Your Points: 8</p>
+            <p class="profile__points-subtext">Scan more to get more rewards</p>
+        </div>
+    </section>
+
+    <section class="profile-bottom">
+        <div class="inputs-block">
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address">
+            </div>
+            <div>
+                <label for="phone-number">Phone Number</label>
+                <input type="number" name="phone-number" id="phone-number">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <a class="profile__reset-pass" href="#">Reset your password</a>
+            <button class="profile__save-button" type="submit">Save Changes</button>
+        </div>
+    </section>
+
+   
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" href="#Page2">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black" href="#Page2">About Us</a>
+	</div>
+	
+	
+	<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+	  </div>
+  </div>
+
+</body>
+</html>

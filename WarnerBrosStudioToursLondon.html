@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Central London Tourists Attraction</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- the three things that jQuery Mobile needs to work -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src ="JavaScripts.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+	    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4fxzjh0_9j9aIXCecrSeDxBztKU5Lzao&callback=initMap"
+      defer
+    ></script>
+	
+
+	<style>
+	
+      #map {
+        height: 150px;
+        width: 100%;
+		margin: 0;
+        padding: 0;
+       }
+	</style>
+	
+	
+	<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = {  lat: 51.69035, lng: -0.41808 }; 
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+		  title: "Warner Bros Studio Tours London" 
+        });
+      }
+    </script>
+
+</head>
+<body>
+
+
+	<div data-role="page" id="page1">
+	
+    <div data-role="panel" data-position="left" data-display="overlay" id="menu"> <!-- /menu panel left-->
+        <ul data-role="listview">
+        <li><a href="Home.html" target="_self">Home</a></li>
+
+        <li><a href="Account.html" target="_self">My Account</a></li>
+
+        <li><a href="ScanAQRCode.html" target="_self">Scan a QR</a></li>
+
+
+  
+        <div class="subHead" data-role="collapsible" data-collapsed="true" data-iconpos="right">
+                <h4>Attraction Category</h4>
+                <ul data-role="listview">
+                <li><a href="HistoricalPlace.html" target="_self">Historical Place</a></li>
+                <li><a href="Activities.html" target="_self">Activities</a></li>
+                <li><a href="Tours.html" target="_self">Tours</a></li>
+        </ul>
+            </div>
+
+            <li><a href="FavouritesPage.html" target="_self">Favorites</a></li>
+
+        <li><a href="#Login/SignUp.html" target="_self">Login/Sign up</a></li>
+
+        <li><a href="About.html" target="_self">About Us</a></li>
+        </ul>
+    </div><!-- /panel left-->
+    
+    
+	<div  data-role="header" id="LogoHeader" data-position="fixed">
+    	<div id ="logo">
+			<a href = "Home.html" target="_self"><img  src  ="ux_images/Logo-iphone.jpg"/></a></div>
+			<a href="#menu" data-icon="bars" data-iconpos="notext" id="icon">Menu</a>
+
+		
+	</div>
+	<div class="ui-content"> <!-- You missed to create a content area -->
+
+		
+		<div id="custom-border-radius" class ="header">
+			<h1>Warner Bros Studio Tour London</h1>
+			    <a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-rel = "back" data-transition="slidefade">No text</a>
+						
+		</div>
+	
+		
+
+<div class="imgBox">
+
+    <img src="ux_images/WarnerBrosStudioTour.jpeg">
+</div>
+
+<div class="contentBox">
+  <h3>Overview</h3>
+  <p>
+Located on the outskirts of London, Warner Bros. Studio is home 
+to a treasure trove of Harry Potter film sets. Step on to authentic 
+sets, discover the magic behind spellbinding special effects and 
+explore the behind-the-scenes secrets of the Harry Potter film 
+series. Tread the original stone floor of the iconic Hogwarts 
+Great Hall, encounter animatronic creatures, wander down Diagon Alley.
+</p>
+  <div class= "miniBox1">
+   <h4> Suggested duration </h4>
+
+6-7 hours
+	</div>
+	<div class= "miniBox1">
+   <h4> Price: </h4>
+   
+Book tour for £98
+	</div>
+	<div class= "miniBox1">
+   <h4> Opening times </h4>
+
+9.30 am - 8.00pm
+</div>
+
+</div>
+
+<div>
+
+
+
+
+<a href="BookingOfWarnerBrosStudioTourLondon.html" target="_self" id ="bookingbtn" data-role="button">Book Hyde Park </a>
+
+<div class= "miniBox2">
+    	<a href="#.html" target="_self" onclick="Fav(); "><img src="ux_images/heart.png"></a>
+
+</div>  
+</div>
+</div>
+
+<div id="MapBox">
+     <!--The div element for the map-->
+     <div id="map"></div>
+     <p>Warford, WD25 7LR</p>
+</div>
+<div id="VideoBox">
+    <embed class="Vid" style="height: 280px; width: 97.5%; padding: 1%;" src="https://www.youtube.com/embed/WsKDf2ccoiw"></embed>
+</div>
+
+<div class= "rating_reviews">
+  <h3>Ratings and Reviews</h3>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+<p>
+  <h4> Highly recommend </h4>
+Simone on the golden tours hop on hop off bus was brilliant. He went....
+</p>
+<p>
+ <h4> Really impressive </h4>
+Really impressive and slick. Really enjoyed the whole experience and so impressive....
+</p>
+<p>
+  <h4> Magical </h4>
+It was an amazing day, we all enjoyed every second and I would recommend it....
+</p>
+
+<a href="ReviewsOfWBSTL.html" target="_self" id ="cmtbtn" data-role="button"> View More Comments </a>
+<br>
+
+
+</div>
+
+
+
+
+<div data-role="footer" class="ui-bar" data-position="fixed" style="background-color: #96ACBA;">
+	<div class="footbar">
+	<a class="footbar-link1" style ="color: black" target="_self" href="Contact.html">Contact Us</a>
+	<a class ="footbar-link2" style ="color: black"target="_self"  href="About.html">About Us</a>
+	</div>
+	
+	
+	<div class="footbar">
+<img src="ux_images/facebook.png">
+
+<img src="ux_images/snapchat.png">
+<img src ="ux_images/instagram.png">
+<img src ="ux_images/twitter.png">
+
+	  </div>
+  </div>
+
+
+</body>
+</html>
